@@ -23,3 +23,5 @@ if ! grep -qF "source /opt/ros/humble/setup.bash" ${HOME}/.bashrc; then
     echo "source /opt/ros/humble/setup.bash" >> ${HOME}/.bashrc
 fi
 rosdep update
+
+echo "Done"
