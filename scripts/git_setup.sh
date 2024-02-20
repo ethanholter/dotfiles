@@ -1,12 +1,12 @@
 #!/bin/bash
 
-if [ "$EUID" -ne 0 ]
-  then echo "Please run as root" && exit 1
-fi
-
-
-sudo -u $SUDO_USER git config --global --replace-all user.email "holterethan@gmail.com"
-sudo -u $SUDO_USER git config --global --replace-all user.name "Ethan Holter"
-sudo -u $SUDO_USER git config --global --replace-all pull.rebase true
+git config --global --replace-all user.email "holterethan@gmail.com"
+git config --global --replace-all user.name "Ethan Holter"
+git config --global --replace-all pull.rebase true
 
 echo "Done"
+
+
+# FOR ONCE IN MY GODDAMN LIFE I WANT GIT TO NOT WORK SO I CAN TEST IT BUT IT WONT FUCKING BREAK
+# FUCKKCKCKCKCKCKCKCCKCKCKCK
+# THIS SHIT HAS NEVER FUCKING WORKED UNTIL NOW WTFFFFF  
