@@ -16,7 +16,7 @@ if ! [ -d "${HOME}/bin" ]; then
     PATH="${HOME}/bin:${PATH}"
 fi
 
-# add 
+# add ~/bin dir to path if not present in bashrc already
 if ! grep -qF "PATH=\"${HOME}/bin:\${PATH}\"" ~/.bashrc; then
     echo "PATH=\"${HOME}/bin:\${PATH}\"" >> ~/.bashrc
 fi
