@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# idempotent - yes
 
 yes | sudo apt update && yes | sudo apt install locales
 yes | sudo locale-gen en_US en_US.UTF-8

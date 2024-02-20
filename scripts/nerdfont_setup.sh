@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# idempotent - yes
+
 FONTNAME="MartianMono"
 
 # Install Nerd Fonts

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# idempotent - yes
+
 if ! [ -f "${HOME}/bin/nvim" ]; then
     wget https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage 
     chmod u+x nvim.appimage

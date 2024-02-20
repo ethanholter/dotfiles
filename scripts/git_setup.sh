@@ -1,7 +1,12 @@
 #!/bin/bash
 
-git config --global --replace-all user.email "holterethan@gmail.com"
-git config --global --replace-all user.name "Ethan Holter"
+# idempotent - yes
+
+read -p "Enter fullname: " FULLNAME
+read -p "Enter email: " EMAIL
+
+git config --global --replace-all user.name $FULLNAME
+git config --global --replace-all user.email $EMAIL
 git config --global --replace-all pull.rebase true
 
 echo "Done"

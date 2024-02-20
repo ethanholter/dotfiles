@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# idempotent - yes
+
 # Add execution privileges to all of the scripts
 for file in "scripts"/*.sh; do
     if [ -f "$file" ] && [ -x "$file" ]; then
