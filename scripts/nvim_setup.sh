@@ -15,4 +15,6 @@ if ! [ -d "${HOME}/.config/nvim" ]; then
     git clone https://github.com/ethanholter/dotfiles.nvim  ~/.config/nvim
 fi
 
+./nerdfont_setup.sh
+
 echo "Done"
