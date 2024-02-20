@@ -6,7 +6,7 @@ FONTNAME="MartianMono"
 
 # Install Nerd Fonts
 if ! [ -d ~/.local/share/fonts ]; then
-    mkdir -p ~/.local/share/fonts
+	mkdir -p ~/.local/share/fonts
 fi
 
 # Download and install the font
@@ -19,4 +19,5 @@ rm -rf tmp/
 # Update the font cache
 sudo fc-cache -fv
 
-echo "Done"
+echo "${FONTNAME} nerdfont installed successfully"
+
