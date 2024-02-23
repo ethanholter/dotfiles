@@ -17,6 +17,13 @@ fi
 unset A
 
 
+# set up global .gitignore
+if ! [ -f ${HOME}/.gitignore ]; then
+  touch ${HOME}/.gitignore
+  echo ".vscode" >> ${HOME}/.gitignore
+fi
+git config --global core.excludesFile '~/.gitignore'
+
 
 git config --global --replace-all pull.rebase true
 git config --global --replace-all rebase.autoStash true
