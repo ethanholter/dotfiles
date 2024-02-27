@@ -8,3 +8,9 @@ format = '\[took [$duration](bold yellow)\]'
 [[battery.display]]
 threshold = 20
 style = 'bold red'
+
+[git_branch]
+symbol = ''
+
+[git_status]
+disabled = true
