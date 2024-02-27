@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # gnome packages
-yes | sudo apt install gnome-tweaks gnome-shell-extensions gnome-themes-extra 
+sudo apt install gnome-tweaks gnome-shell-extensions gnome-themes-extra -y
 
 # unecessary flexing
-yes | sudo apt install cava neofetch bpytop
+sudo apt install cava neofetch bpytop -y
 
 # Theme
 sudo apt install gtk2-engines-murrine
