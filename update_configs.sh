@@ -1,0 +1,1 @@
+cp ./configs/starship.toml ~/.config/starship.toml
